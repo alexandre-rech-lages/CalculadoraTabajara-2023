@@ -5,6 +5,7 @@
         //1 - Implementar a funcionalidade de somar dois números
         //2 - Implementar a funcionalidade de subtrair dois números
         //3 - Implementar a funcionalidade de multiplicar dois números
+        //4 - Implementar a funcionalidade de divisão de dois números
 
         static void Main(string[] args)
         {
@@ -25,6 +26,8 @@
                 Console.WriteLine("Digite 2 para Subtração\n");
 
                 Console.WriteLine("Digite 3 para Multiplicação\n");
+
+                Console.WriteLine("Digite 4 para Divisão\n");
 
                 Console.WriteLine("Digite S para sair\n");
 
