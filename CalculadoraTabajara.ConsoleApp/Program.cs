@@ -1,7 +1,9 @@
 ﻿namespace CalculadoraTabajara.ConsoleApp
 {
     internal class Program
-    {        
+    {
+        //1 - Implementar a funcionalidade de somar dois números
+
         static void Main(string[] args)
         {
             string opcao;
@@ -15,6 +17,8 @@
                 Console.WriteLine("Calculadora Tabajara 1.0\n");
 
                 Console.WriteLine("Tela Principal\n");
+
+                Console.WriteLine("Digite 1 para Adição\n");
 
                 Console.WriteLine("Digite S para sair\n");
 
@@ -36,6 +40,8 @@
 
                 switch (opcao)
                 {
+                    case "1": operacao = "Adição"; break;
+
                     default:
                         break;
                 }
@@ -54,7 +60,9 @@
 
                 switch (opcao)
                 {
-                    default:
+                    case "1": resultado = primeiroNumero + segundoNumero; break;
+
+                    default: 
                         break;
                 }
                 #endregion
