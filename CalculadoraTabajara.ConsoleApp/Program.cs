@@ -3,6 +3,7 @@
     internal class Program
     {
         //1 - Implementar a funcionalidade de somar dois números
+        //2 - Implementar a funcionalidade de subtrair dois números
 
         static void Main(string[] args)
         {
@@ -19,6 +20,7 @@
                 Console.WriteLine("Tela Principal\n");
 
                 Console.WriteLine("Digite 1 para Adição\n");
+                Console.WriteLine("Digite 2 para Subtração\n");
 
                 Console.WriteLine("Digite S para sair\n");
 
@@ -41,6 +43,7 @@
                 switch (opcao)
                 {
                     case "1": operacao = "Adição"; break;
+                    case "2": operacao = "Subtração"; break;
 
                     default:
                         break;
@@ -61,6 +64,7 @@
                 switch (opcao)
                 {
                     case "1": resultado = primeiroNumero + segundoNumero; break;
+                    case "2": resultado = primeiroNumero - segundoNumero; break;
 
                     default: 
                         break;
