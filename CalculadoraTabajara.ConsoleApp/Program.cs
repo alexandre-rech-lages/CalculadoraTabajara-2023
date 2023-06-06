@@ -55,6 +55,8 @@
 
                     case "3": operacao = "Multiplicação"; break;
 
+                    case "4": operacao = "Divisão"; break;
+
                     default:
                         break;
                 }
