@@ -81,6 +81,8 @@
 
                     case "3": resultado = primeiroNumero * segundoNumero; break;
 
+                    case "4": resultado = primeiroNumero / segundoNumero; break;
+
                     default: 
                         break;
                 }
