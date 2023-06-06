@@ -1,0 +1,13 @@
+
+Branch's por Módulo - Feature Branch
+	
+	Contexto de Dados
+
+	Entidade
+	Interfaces do Repositorio
+	Repositorio
+	Controlador
+	Tela
+	Tabelas
+	
+
