@@ -11,6 +11,8 @@
         {
             string opcao;
 
+            List<String> operacoes = new List<string>();
+
             while (true)
             {
                 #region Menu Principal
@@ -29,6 +31,8 @@
 
                 Console.WriteLine("Digite 4 para Divisão\n");
 
+                Console.WriteLine("Digite 5 para Visualizar as operações\n");
+
                 Console.WriteLine("Digite S para sair\n");
 
                 Console.Write("Opção: ");
@@ -37,7 +41,7 @@
                 if (opcao.Equals("s", StringComparison.OrdinalIgnoreCase))
                     break;
 
-                if (opcao != "1" && opcao != "2" && opcao != "3" && opcao != "4")
+                if (opcao != "1" && opcao != "2" && opcao != "3" && opcao != "4" && opcao != "5")
                 {
                     Console.WriteLine("Você precisa digitar uma opção válida!");
                     Console.ReadLine();
@@ -64,6 +68,19 @@
 
                     case "4": operacao = "Divisão"; break;
 
+                    case "5":
+                        {
+                            Console.WriteLine("Visualizando operações realizadas: \n");
+
+                            foreach (string op in operacoes)
+                            {
+                                Console.WriteLine(op);
+                            }
+
+                            Console.ReadLine();
+                        };
+                        continue;
+
                     default:
                         break;
                 }
@@ -83,14 +100,14 @@
                 switch (opcao)
                 {
                     case "1": resultado = primeiroNumero + segundoNumero; break;
-                    
+
                     case "2": resultado = primeiroNumero - segundoNumero; break;
 
                     case "3": resultado = primeiroNumero * segundoNumero; break;
 
                     case "4": resultado = primeiroNumero / segundoNumero; break;
 
-                    default: 
+                    default:
                         break;
                 }
                 #endregion
@@ -103,6 +120,25 @@
                 Console.WriteLine("Tela de Resultados\n");
 
                 Console.Write($"O resultado da operação de {operacao} é: {resultado}");
+
+                string simbolo = "";
+                switch (opcao)
+                {
+                    case "1": simbolo = "+"; break;
+
+                    case "2": simbolo = "-"; break;
+
+                    case "3": simbolo = "*"; break;
+
+                    case "4": simbolo = "/"; break;
+
+                    default:
+                        break;
+                }
+
+                string descricaoOperacao = $"{primeiroNumero} {simbolo} {segundoNumero} = {resultado}";
+
+                operacoes.Add(descricaoOperacao);
 
                 Console.WriteLine();
 
